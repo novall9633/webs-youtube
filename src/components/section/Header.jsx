@@ -1,4 +1,5 @@
 import React from 'react'
+import {CiBaseball, CiMoneyBill, CiCoins1, CiBoxes, CiBullhorn, CiCoffeeCup, CiDumbbell, CiFries} from 'react-icons/ci';
 
 const Header = () => {
   return (
@@ -24,32 +25,32 @@ const Header = () => {
                 </li>
                 <li>
                     <a href="/developer">
-                        <CiMoneyBill />추천 개발자
+                        <CiCoins1 />추천 개발자
                     </a>
                 </li>
                 <li>
                     <a href="/webd">
-                        <CiMoneyBill />웹디자인기능사
+                        <CiBoxes />웹디자인기능사
                     </a>
                 </li>
                 <li>
                     <a href="/website">
-                        <CiMoneyBill />웹표준 사이트
+                        <CiBullhorn />웹표준 사이트
                     </a>
                 </li>
                 <li>
                     <a href="/gsap">
-                        <CiMoneyBill />GSAP Parallax
+                        <CiCoffeeCup />GSAP Parallax
                     </a>
                 </li>
                 <li>
                     <a href="/port">
-                        <CiMoneyBill />포트폴리오 사이트
+                        <CiDumbbell />포트폴리오 사이트
                     </a>
                 </li>
                 <li>
                     <a href="/youtube">
-                        <CiMoneyBill />유튜브 클론 사이트
+                        <CiFries />유튜브 클론 사이트
                     </a>
                 </li>
             </ul>
@@ -89,7 +90,9 @@ const Header = () => {
         <div className='header__sns'>
             <ul>
                 <li>
-                    <a href="https://github.com"></a>
+                    <a href="https://github.com/novall9633" rel='noopener noreferrer'>
+                        <AiFillGithub />
+                    </a>
                 </li>
             </ul>
         </div>
