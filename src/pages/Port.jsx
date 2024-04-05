@@ -1,10 +1,26 @@
-import React from 'react';
-import Main from '../components/section/Main';
+import React, { useEffect, useState } from "react";
+import Main from "../components/section/Main";
+import { portfolioText } from "../data/portfolio";
+import VideoCards from "../components/videos/VideoCards";
 
 const Port = () => {
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false);
+        }, 300);
+    }, []);
+
+    const portPageClass = loading ? "isLoading" : "isLoaded";
     return (
         <Main title="포트폴리오 사이트" description="포트폴리오 사이트">
-            
+            <section id="portPage" className={portPageClass}>
+                <h2>🫣 나만의 포트폴리오 사이를 만들고 싶다면.</h2>
+                <div className="video__inner">
+                    <VideoCards videos={portfolioText} />
+                </div>
+            </section>
         </Main>
     );
 };
